@@ -1,0 +1,59 @@
+指针
+1.掌握文件的基本概念和作用 ；
+
+2.掌握文件的读写操作 ；
+
+3.掌握文件指针在Python文件中前后移动 。
+
+内建函数
+1.掌握Python的6个内建函数abs()、bool()、float()、int()、range()和sum()的用法 ；
+
+2.掌握Python的6个内建函数max()、min()、dir()、eval()、exec()和len()的用法 。
+
+
+常用模块：
+1.掌握Python常用模块的基本概念和作用 ；
+
+2.掌握copy模块的用法 ；
+
+3.掌握Python中keyword模块、random模块的用法 ；
+
+4.掌握Python中sys模块、time模块的用法 。
+
+
+
+pip使用要在python外面
+pyhton很多不提供64位库 建议安装32
+
+urllib
+from urllib.request import urlopen
+
+pip install beautifulsoup4
+
+from bs4 import BeautifulSoup
+
+查看安装的模块  help("modules")   输入$ pydoc modules是一样的
+
+urllib第三方url库：
+使用：
+导入urllib库的request的模块
+	from urllib import request
+请求url：
+	resp = request.urlopen('url')
+使用响应对象输出数据：
+	print(resp.read().decode("utf-8"))
+
+
+模拟真实：
+req = request.Request(url)
+req.add_header(k,v)
+resp = request.urlopen('url')
+
+
+胶水特性 集成c语言
+numpy 
+scipy 
+matplotlib
+pandas
+scikit-learn
+keras
